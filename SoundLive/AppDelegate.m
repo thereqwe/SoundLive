@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YKSHomeViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    window.backgroundColor = [UIColor whiteColor];
+    
+    YKSHomeViewController *vc = [YKSHomeViewController new];
+    UINavigationController *navi = [UINavigationController new];
+    [navi pushViewController:vc animated:NO];
+    self.window = window;
+    window.rootViewController = navi;
+    [window makeKeyWindow];
     return YES;
 }
 

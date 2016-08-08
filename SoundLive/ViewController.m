@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-
 @interface ViewController ()
 
 @end
@@ -16,7 +15,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    int a = AAA;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

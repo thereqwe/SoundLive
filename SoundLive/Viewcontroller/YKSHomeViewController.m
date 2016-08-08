@@ -9,7 +9,9 @@
 #import "YKSHomeViewController.h"
 
 @interface YKSHomeViewController ()
-
+{
+    UITableView * ui_table_home;
+}
 @end
 
 @implementation YKSHomeViewController
