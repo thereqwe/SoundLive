@@ -8,8 +8,7 @@
 
 #import "YKSHomeTableViewCell.h"
 
-@implementation YKSHomeTableViewCell
-{
+@implementation YKSHomeTableViewCell {
     UIView *ui_view_container;
     UIImageView *ui_img_poster;
     UILabel *ui_lb_title;
@@ -17,16 +16,14 @@
     UIImageView *ui_img_show_status;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     [self setupUI];
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     return self;
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     ui_view_container = [UIView new];
     self.contentView.backgroundColor = GRAYCOLOR;
     ui_view_container.backgroundColor = WHITECOLOR;
@@ -67,13 +64,13 @@
     ui_img_show_status = [UIImageView new];
     [ui_view_container addSubview:ui_img_show_status];
     [ui_img_show_status mas_makeConstraints:^(MASConstraintMaker *make) {
+        NSLog(@"show the log");
         make.top.equalTo(ui_lb_title.mas_bottom).offset(8);
         make.right.mas_equalTo(-8);
     }];
 }
 
-- (void)setDataWithDict:(NSDictionary*)dict
-{
+- (void)setDataWithDict:(NSDictionary*)dict {
     [ui_img_poster sd_setImageWithURL:[NSURL URLWithString:dict[@"pic"]]];
     [ui_lb_title setText:dict[@"title"]];
     ui_lb_begin_time.text = dict[@"begin_time"];

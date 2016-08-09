@@ -8,8 +8,7 @@
 
 #import "YKSHomeViewController.h"
 #import "YKSHomeTableViewCell.h"
-@interface YKSHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
-{
+@interface YKSHomeViewController ()<UITableViewDelegate,UITableViewDataSource> {
     UITableView * ui_table_home;
     NSArray *dataArr;
 }
@@ -17,41 +16,35 @@
 
 @implementation YKSHomeViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     [self setupData];
     [self setupUI];
 }
 
 #pragma mark - table delegate & datasourc
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [dataArr count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YKSHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     [cell setDataWithDict:dataArr[indexPath.row]];
     return  cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *dict = dataArr[indexPath.row];
     //todo jump vc
 }
 #pragma mark - setup
-- (void)setupData
-{
+- (void)setupData {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"source" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
     dataArr = dict[@"data"];
 }
 
-- (void)setupUI
-{
+- (void)setupUI {
     ui_table_home = [UITableView new];
     ui_table_home.showsVerticalScrollIndicator = NO;
     ui_table_home.delegate = self;
