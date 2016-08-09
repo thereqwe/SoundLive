@@ -15,6 +15,7 @@
 		B8AFA4E21D588216008CCC2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4E11D588216008CCC2C /* Assets.xcassets */; };
 		B8AFA4E51D588216008CCC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4E31D588216008CCC2C /* LaunchScreen.storyboard */; };
 		B8AFA4F01D589434008CCC2C /* YKSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */; };
+		B8AFA4F31D5972E1008CCC2C /* source.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4F21D5972E1008CCC2C /* source.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		B8AFA4EC1D588244008CCC2C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B8AFA4EE1D589434008CCC2C /* YKSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSHomeViewController.h; sourceTree = "<group>"; };
 		B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSHomeViewController.m; sourceTree = "<group>"; };
+		B8AFA4F21D5972E1008CCC2C /* source.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = source.plist; sourceTree = "<group>"; };
 		D84D10ADEC5FEE2708CCD3DB /* Pods-SoundLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundLive/Pods-SoundLive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		B8AFA4D41D588216008CCC2C /* SoundLive */ = {
 			isa = PBXGroup;
 			children = (
+				B8AFA4F11D5972C3008CCC2C /* Data */,
 				B8AFA4ED1D58940B008CCC2C /* Viewcontroller */,
 				B8AFA4D81D588216008CCC2C /* AppDelegate.h */,
 				B8AFA4D91D588216008CCC2C /* AppDelegate.m */,
@@ -116,6 +119,14 @@
 				B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */,
 			);
 			path = Viewcontroller;
+			sourceTree = "<group>";
+		};
+		B8AFA4F11D5972C3008CCC2C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B8AFA4F21D5972E1008CCC2C /* source.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				B8AFA4E51D588216008CCC2C /* LaunchScreen.storyboard in Resources */,
 				B8AFA4E21D588216008CCC2C /* Assets.xcassets in Resources */,
 				B8AFA4E01D588216008CCC2C /* Main.storyboard in Resources */,
+				B8AFA4F31D5972E1008CCC2C /* source.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
