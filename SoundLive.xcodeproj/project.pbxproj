@@ -12,7 +12,6 @@
 		B8AFA4DD1D588216008CCC2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4DC1D588216008CCC2C /* ViewController.m */; };
 		B8AFA4E01D588216008CCC2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4DE1D588216008CCC2C /* Main.storyboard */; };
 		B8AFA4E51D588216008CCC2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4E31D588216008CCC2C /* LaunchScreen.storyboard */; };
-		B8AFA4F01D589434008CCC2C /* YKSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */; };
 		B8AFA4F31D5972E1008CCC2C /* source.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8AFA4F21D5972E1008CCC2C /* source.plist */; };
 		BA2D6698E189888487137C7B /* libPods-SoundLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F2A4B329E8ACDA914DE241F /* libPods-SoundLive.a */; };
 		E220A2F31D597936008AC96F /* YKLBPlayerCore.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A2F21D597936008AC96F /* YKLBPlayerCore.m */; };
@@ -45,8 +44,6 @@
 		B8AFA4E41D588216008CCC2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AFA4E61D588216008CCC2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8AFA4EC1D588244008CCC2C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		B8AFA4EE1D589434008CCC2C /* YKSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSHomeViewController.h; sourceTree = "<group>"; };
-		B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSHomeViewController.m; sourceTree = "<group>"; };
 		B8AFA4F21D5972E1008CCC2C /* source.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = source.plist; sourceTree = "<group>"; };
 		E220A2F11D597936008AC96F /* YKLBPlayerCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKLBPlayerCore.h; sourceTree = "<group>"; };
 		E220A2F21D597936008AC96F /* YKLBPlayerCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKLBPlayerCore.m; sourceTree = "<group>"; };
@@ -94,6 +91,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B82459281D59927F007A6386 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B82459291D59927F007A6386 /* Imgs */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B82459291D59927F007A6386 /* Imgs */ = {
+			isa = PBXGroup;
+			children = (
+				B824592A1D5992A8007A6386 /* back@2x.png */,
+				B824592B1D5992A8007A6386 /* back@3x.png */,
+				B824592C1D5992A8007A6386 /* background@2x.png */,
+				B824592D1D5992A8007A6386 /* background@3x.png */,
+				B824592E1D5992A8007A6386 /* forward@2x.png */,
+				B824592F1D5992A8007A6386 /* forward@3x.png */,
+				B82459301D5992A8007A6386 /* live@2x.png */,
+				B82459311D5992A8007A6386 /* live@3x.png */,
+				B82459321D5992A8007A6386 /* play@2x.png */,
+				B82459331D5992A8007A6386 /* play@3x.png */,
+				B82459341D5992A8007A6386 /* return@2x.png */,
+				B82459351D5992A8007A6386 /* return@3x.png */,
+				B82459361D5992A8007A6386 /* right@2x.png */,
+				B82459371D5992A8007A6386 /* right@3x.png */,
+				B82459381D5992A8007A6386 /* suspend@2x.png */,
+				B82459391D5992A8007A6386 /* suspend@3x.png */,
+				B824593A1D5992A8007A6386 /* video@2x.png */,
+				B824593B1D5992A8007A6386 /* video@3x.png */,
+			);
+			path = Imgs;
+			sourceTree = "<group>";
+		};
 		B8AFA4C91D588216008CCC2C = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +145,7 @@
 		B8AFA4D41D588216008CCC2C /* SoundLive */ = {
 			isa = PBXGroup;
 			children = (
+				B82459281D59927F007A6386 /* Source */,
 				B8AFA4F11D5972C3008CCC2C /* Data */,
 				B8AFA4ED1D58940B008CCC2C /* Viewcontroller */,
 				E220A2FB1D597CCC008AC96F /* View */,
@@ -280,6 +311,10 @@
 				E220A3181D59C986008AC96F /* Assets.xcassets in Resources */,
 				B8AFA4E01D588216008CCC2C /* Main.storyboard in Resources */,
 				B8AFA4F31D5972E1008CCC2C /* source.plist in Resources */,
+				B824594C1D5992A8007A6386 /* video@2x.png in Resources */,
+				B824593F1D5992A8007A6386 /* background@3x.png in Resources */,
+				B824594A1D5992A8007A6386 /* suspend@2x.png in Resources */,
+				B82459401D5992A8007A6386 /* forward@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +384,7 @@
 				B8AFA4F01D589434008CCC2C /* YKSHomeViewController.m in Sources */,
 				E220A3081D598721008AC96F /* YKSSoundLive.m in Sources */,
 				B8AFA4DA1D588216008CCC2C /* AppDelegate.m in Sources */,
+				B8AFA4FA1D597D08008CCC2C /* YKSHomeTableViewCell.m in Sources */,
 				B8AFA4D71D588216008CCC2C /* main.m in Sources */,
 				E220A3161D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m in Sources */,
 				E220A2F31D597936008AC96F /* YKLBPlayerCore.m in Sources */,
