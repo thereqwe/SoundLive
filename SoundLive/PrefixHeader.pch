@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
 #define ColorRGBA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 #define ColorRGB(R, G, B) ColorRGBA(R, G, B, 1)
 #define PURPLECOLOR [UIColor colorWithRed:104/255.0 green:121/255.0 blue:255/255.0 alpha:1]
