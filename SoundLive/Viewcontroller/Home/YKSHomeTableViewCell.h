@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YKSHomeTableViewCell : UITableViewCell
-
+- (void)setDataWithDict:(NSDictionary*)dict;
 @end

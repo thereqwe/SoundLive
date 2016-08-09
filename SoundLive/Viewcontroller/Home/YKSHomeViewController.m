@@ -33,6 +33,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     YKSHomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    [cell setDataWithDict:dataArr[indexPath.row]];
     return  cell;
 }
 
@@ -40,7 +41,8 @@
 - (void)setupData
 {
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"source" ofType:@"plist"];
-    dataArr = [[NSArray alloc] initWithContentsOfFile:plistPath];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    dataArr = dict[@"data"];
 }
 
 - (void)setupUI
@@ -48,8 +50,12 @@
     ui_table_home = [UITableView new];
     ui_table_home.delegate = self;
     ui_table_home.dataSource = self;
+    ui_table_home.estimatedRowHeight = 88;
+    ui_table_home.tableFooterView = [UIView new];
+    ui_table_home.rowHeight = UITableViewAutomaticDimension;
     ui_table_home.backgroundColor = PURPLECOLOR;
     [ui_table_home registerClass:[YKSHomeTableViewCell class] forCellReuseIdentifier:@"cell"];
+    
     [self.view addSubview:ui_table_home];
     [ui_table_home mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(0);

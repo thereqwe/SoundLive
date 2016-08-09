@@ -20,6 +20,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    [self setupUI];
     return self;
 }
 
@@ -29,7 +30,7 @@
     [self.contentView addSubview:ui_view_container];
     [ui_view_container mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.mas_equalTo(0);
-        make.height.mas_equalTo(100);
+        make.height.mas_equalTo(180);
         make.bottom.mas_equalTo(-8);
     }];
     
@@ -37,7 +38,7 @@
     [ui_view_container addSubview:ui_img_poster];
     [ui_img_poster mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.right.left.mas_equalTo(0);
-        make.height.mas_equalTo(80);
+        make.height.mas_equalTo(120);
     }];
     
     ui_lb_title = [UILabel new];
@@ -49,6 +50,7 @@
     }];
     
     ui_lb_begin_time = [UILabel new];
+    ui_lb_begin_time.font = [UIFont systemFontOfSize:13];
     [ui_view_container addSubview:ui_lb_begin_time];
     [ui_lb_begin_time mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(8);
@@ -65,6 +67,9 @@
 
 - (void)setDataWithDict:(NSDictionary*)dict
 {
-    [ui_img_show_status sd_setImageWithURL:nil];
+    [ui_img_poster sd_setImageWithURL:[NSURL URLWithString:dict[@"pic"]]];
+    [ui_lb_title setText:dict[@"title"]];
+    ui_lb_begin_time.text = dict[@"begin_time"];
+    [ui_img_show_status setImage:[UIImage imageNamed:@"live"]];
 }
 @end

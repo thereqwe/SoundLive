@@ -21,6 +21,7 @@
     window.backgroundColor = [UIColor whiteColor];
     
     YKSHomeViewController *vc = [YKSHomeViewController new];
+    vc.title = @"优酷直播";
     UINavigationController *navi = [UINavigationController new];
     [navi pushViewController:vc animated:NO];
     self.window = window;
