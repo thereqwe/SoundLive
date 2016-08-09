@@ -8,32 +8,53 @@
 
 #import "YKSHomeViewController.h"
 
-@interface YKSHomeViewController ()
+@interface YKSHomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView * ui_table_home;
+    NSArray *dataArr;
 }
 @end
 
 @implementation YKSHomeViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setupData];
+    [self setupUI];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - table delegate & datasourc
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [dataArr count];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
-*/
+
+#pragma mark - setup
+- (void)setupData
+{
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"source" ofType:@"plist"];
+    dataArr = [[NSArray alloc] initWithContentsOfFile:plistPath];
+}
+
+- (void)setupUI
+{
+    ui_table_home = [UITableView new];
+    ui_table_home.delegate = self;
+    ui_table_home.dataSource = self;
+    [self.view addSubview:ui_table_home];
+    [ui_table_home mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.top.mas_equalTo(0);
+        make.bottom.mas_equalTo(0);
+    }];
+}
+
 
 @end
