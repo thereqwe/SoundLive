@@ -37,6 +37,11 @@
     return  cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *dict = dataArr[indexPath.row];
+    //todo jump vc
+}
 #pragma mark - setup
 - (void)setupData
 {
@@ -48,9 +53,11 @@
 - (void)setupUI
 {
     ui_table_home = [UITableView new];
+    ui_table_home.showsVerticalScrollIndicator = NO;
     ui_table_home.delegate = self;
     ui_table_home.dataSource = self;
     ui_table_home.estimatedRowHeight = 88;
+    ui_table_home.separatorStyle = UITableViewCellSeparatorStyleNone;
     ui_table_home.tableFooterView = [UIView new];
     ui_table_home.rowHeight = UITableViewAutomaticDimension;
     ui_table_home.backgroundColor = GRAYCOLOR;

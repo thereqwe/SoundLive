@@ -15,7 +15,7 @@
 #define ColorRGB(R, G, B) ColorRGBA(R, G, B, 1)
 #define PURPLECOLOR [UIColor colorWithRed:104/255.0 green:121/255.0 blue:255/255.0 alpha:1]
 #define TESTCOLOR [UIColor colorWithRed:224/255.0 green:221/255.0 blue:5/255.0 alpha:1]
-#define GRAYCOLOR [UIColor colorWithRed:250/255.0 green:250/255.0 blue:250/255.0 alpha:1]
+#define GRAYCOLOR [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1]
 #define WHITECOLOR [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]
 #define BLACKCOLOR [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:1]
 #define FOGCOLOR [UIColor colorWithRed:220/255.0 green:220/255.0 blue:255/255.0 alpha:1]
