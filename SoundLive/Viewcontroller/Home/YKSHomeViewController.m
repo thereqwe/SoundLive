@@ -48,6 +48,7 @@
     ui_table_home = [UITableView new];
     ui_table_home.delegate = self;
     ui_table_home.dataSource = self;
+    ui_table_home.backgroundColor = PURPLECOLOR;
     [ui_table_home registerClass:[YKSHomeTableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:ui_table_home];
     [ui_table_home mas_makeConstraints:^(MASConstraintMaker *make) {
