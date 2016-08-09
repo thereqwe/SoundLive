@@ -8,5 +8,6 @@ pod ‘AFNetworking‘,‘2.6.3‘
 pod ‘SDWebImage‘
 pod ‘MJRefresh‘
 pod ‘Masonry‘
+pod ‘SVProgressHUD‘
 end
 

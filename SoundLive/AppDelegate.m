@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseNavigationController.h"
 #import "YKSHomeViewController.h"
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
     window.backgroundColor = [UIColor whiteColor];
     
     YKSHomeViewController *vc = [YKSHomeViewController new];
-    UINavigationController *navi = [UINavigationController new];
+    BaseNavigationController *navi = [BaseNavigationController new];
     [navi pushViewController:vc animated:NO];
     self.window = window;
     window.rootViewController = navi;
