@@ -53,7 +53,7 @@
     ui_table_home.estimatedRowHeight = 88;
     ui_table_home.tableFooterView = [UIView new];
     ui_table_home.rowHeight = UITableViewAutomaticDimension;
-    ui_table_home.backgroundColor = PURPLECOLOR;
+    ui_table_home.backgroundColor = GRAYCOLOR;
     [ui_table_home registerClass:[YKSHomeTableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [self.view addSubview:ui_table_home];

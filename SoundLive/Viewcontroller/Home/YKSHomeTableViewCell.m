@@ -50,6 +50,7 @@
     }];
     
     ui_lb_begin_time = [UILabel new];
+    ui_lb_begin_time.textColor = PURPLECOLOR;
     ui_lb_begin_time.font = [UIFont systemFontOfSize:13];
     [ui_view_container addSubview:ui_lb_begin_time];
     [ui_lb_begin_time mas_makeConstraints:^(MASConstraintMaker *make) {
