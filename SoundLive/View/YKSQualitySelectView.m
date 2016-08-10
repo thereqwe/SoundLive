@@ -7,8 +7,6 @@
 //
 
 #import "YKSQualitySelectView.h"
-#import "YKSConstConfig.h"
-#import "UIView+addition.h"
 
 #define kBaselineBtnTag 1001
 

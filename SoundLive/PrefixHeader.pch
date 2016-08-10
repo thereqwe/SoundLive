@@ -8,9 +8,15 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+
+#ifdef __OBJC__
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SDWebImage/UIButton+WebCache.h>
+#import "UIView+addition.h"
+#import "YKSConstConfig.h"
+#import "SVProgressHUD+YKSAddition.h"
+
 #define ColorRGBA(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 #define ColorRGB(R, G, B) ColorRGBA(R, G, B, 1)
 #define PURPLECOLOR [UIColor colorWithRed:104/255.0 green:121/255.0 blue:255/255.0 alpha:1]
@@ -21,7 +27,13 @@
 #define FOGCOLOR [UIColor colorWithRed:220/255.0 green:220/255.0 blue:255/255.0 alpha:1]
 #define ASHCOLOR [UIColor colorWithRed:215/255.0 green:215/255.0 blue:215/255.0 alpha:1]
 #define BACKCOLOR [UIColor colorWithRed:245/255.0 green:245/255.0 blue:245/255.0 alpha:1]
+
+#define kSCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define kSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif
 
 #endif /* PrefixHeader_pch */

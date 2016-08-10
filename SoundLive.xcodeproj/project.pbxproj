@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B824593F1D5992A8007A6386 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		B82459401D5992A8007A6386 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		B824594A1D5992A8007A6386 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		B824594C1D5992A8007A6386 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		B8AFA4D71D588216008CCC2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4D61D588216008CCC2C /* main.m */; };
 		B8AFA4DA1D588216008CCC2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4D91D588216008CCC2C /* AppDelegate.m */; };
 		B8AFA4DD1D588216008CCC2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AFA4DC1D588216008CCC2C /* ViewController.m */; };
@@ -24,10 +28,12 @@
 		E220A30E1D59874E008AC96F /* YKSVideoLive.xib in Resources */ = {isa = PBXBuildFile; fileRef = E220A30C1D59874E008AC96F /* YKSVideoLive.xib */; };
 		E220A3161D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A3151D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m */; };
 		E220A3181D59C986008AC96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E220A3171D59C986008AC96F /* Assets.xcassets */; };
-		E220A31B1D59CE96008AC96F /* YKSQualitySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A31A1D59CE96008AC96F /* YKSQualitySelectView.m */; };
-		E220A31E1D59D023008AC96F /* YKQualitySelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A31D1D59D023008AC96F /* YKQualitySelectItem.m */; };
 		E220A3271D59D44F008AC96F /* UIView+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A3261D59D44F008AC96F /* UIView+addition.m */; };
 		E220A32A1D59DAF5008AC96F /* YKSConstConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A3291D59DAF5008AC96F /* YKSConstConfig.m */; };
+		E220A33D1D59FDC1008AC96F /* YKQualitySelectItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A33A1D59FDC1008AC96F /* YKQualitySelectItem.m */; };
+		E220A33E1D59FDC1008AC96F /* YKSQualitySelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A33C1D59FDC1008AC96F /* YKSQualitySelectView.m */; };
+		E220A34A1D59FE70008AC96F /* YKSHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A3471D59FE70008AC96F /* YKSHomeTableViewCell.m */; };
+		E220A34B1D59FE70008AC96F /* YKSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E220A3491D59FE70008AC96F /* YKSHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,14 +67,18 @@
 		E220A3141D59C5A5008AC96F /* SVProgressHUD+YKSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+YKSAddition.h"; sourceTree = "<group>"; };
 		E220A3151D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+YKSAddition.m"; sourceTree = "<group>"; };
 		E220A3171D59C986008AC96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E220A3191D59CE96008AC96F /* YKSQualitySelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSQualitySelectView.h; sourceTree = "<group>"; };
-		E220A31A1D59CE96008AC96F /* YKSQualitySelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSQualitySelectView.m; sourceTree = "<group>"; };
-		E220A31C1D59D023008AC96F /* YKQualitySelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKQualitySelectItem.h; sourceTree = "<group>"; };
-		E220A31D1D59D023008AC96F /* YKQualitySelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKQualitySelectItem.m; sourceTree = "<group>"; };
 		E220A3251D59D44F008AC96F /* UIView+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+addition.h"; sourceTree = "<group>"; };
 		E220A3261D59D44F008AC96F /* UIView+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+addition.m"; sourceTree = "<group>"; };
 		E220A3281D59DAF5008AC96F /* YKSConstConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSConstConfig.h; sourceTree = "<group>"; };
 		E220A3291D59DAF5008AC96F /* YKSConstConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSConstConfig.m; sourceTree = "<group>"; };
+		E220A3391D59FDC1008AC96F /* YKQualitySelectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKQualitySelectItem.h; sourceTree = "<group>"; };
+		E220A33A1D59FDC1008AC96F /* YKQualitySelectItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKQualitySelectItem.m; sourceTree = "<group>"; };
+		E220A33B1D59FDC1008AC96F /* YKSQualitySelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSQualitySelectView.h; sourceTree = "<group>"; };
+		E220A33C1D59FDC1008AC96F /* YKSQualitySelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSQualitySelectView.m; sourceTree = "<group>"; };
+		E220A3461D59FE70008AC96F /* YKSHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSHomeTableViewCell.h; sourceTree = "<group>"; };
+		E220A3471D59FE70008AC96F /* YKSHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSHomeTableViewCell.m; sourceTree = "<group>"; };
+		E220A3481D59FE70008AC96F /* YKSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKSHomeViewController.h; sourceTree = "<group>"; };
+		E220A3491D59FE70008AC96F /* YKSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKSHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,39 +99,6 @@
 				3F2A4B329E8ACDA914DE241F /* libPods-SoundLive.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B82459281D59927F007A6386 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B82459291D59927F007A6386 /* Imgs */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		B82459291D59927F007A6386 /* Imgs */ = {
-			isa = PBXGroup;
-			children = (
-				B824592A1D5992A8007A6386 /* back@2x.png */,
-				B824592B1D5992A8007A6386 /* back@3x.png */,
-				B824592C1D5992A8007A6386 /* background@2x.png */,
-				B824592D1D5992A8007A6386 /* background@3x.png */,
-				B824592E1D5992A8007A6386 /* forward@2x.png */,
-				B824592F1D5992A8007A6386 /* forward@3x.png */,
-				B82459301D5992A8007A6386 /* live@2x.png */,
-				B82459311D5992A8007A6386 /* live@3x.png */,
-				B82459321D5992A8007A6386 /* play@2x.png */,
-				B82459331D5992A8007A6386 /* play@3x.png */,
-				B82459341D5992A8007A6386 /* return@2x.png */,
-				B82459351D5992A8007A6386 /* return@3x.png */,
-				B82459361D5992A8007A6386 /* right@2x.png */,
-				B82459371D5992A8007A6386 /* right@3x.png */,
-				B82459381D5992A8007A6386 /* suspend@2x.png */,
-				B82459391D5992A8007A6386 /* suspend@3x.png */,
-				B824593A1D5992A8007A6386 /* video@2x.png */,
-				B824593B1D5992A8007A6386 /* video@3x.png */,
-			);
-			path = Imgs;
 			sourceTree = "<group>";
 		};
 		B8AFA4C91D588216008CCC2C = {
@@ -145,7 +122,6 @@
 		B8AFA4D41D588216008CCC2C /* SoundLive */ = {
 			isa = PBXGroup;
 			children = (
-				B82459281D59927F007A6386 /* Source */,
 				B8AFA4F11D5972C3008CCC2C /* Data */,
 				B8AFA4ED1D58940B008CCC2C /* Viewcontroller */,
 				E220A2FB1D597CCC008AC96F /* View */,
@@ -176,20 +152,15 @@
 		B8AFA4ED1D58940B008CCC2C /* Viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				E220A3451D59FE70008AC96F /* Home */,
 				E220A2F81D597C5C008AC96F /* BaseNavigationController.h */,
 				E220A2F91D597C5C008AC96F /* BaseNavigationController.m */,
-				B8AFA4EE1D589434008CCC2C /* YKSHomeViewController.h */,
-				B8AFA4EF1D589434008CCC2C /* YKSHomeViewController.m */,
 				E220A30A1D59874E008AC96F /* YKSVideoLive.h */,
 				E220A30B1D59874E008AC96F /* YKSVideoLive.m */,
 				E220A30C1D59874E008AC96F /* YKSVideoLive.xib */,
 				E220A3051D598721008AC96F /* YKSSoundLive.h */,
 				E220A3061D598721008AC96F /* YKSSoundLive.m */,
 				E220A3071D598721008AC96F /* YKSSoundLive.xib */,
-				E220A3191D59CE96008AC96F /* YKSQualitySelectView.h */,
-				E220A31A1D59CE96008AC96F /* YKSQualitySelectView.m */,
-				E220A31C1D59D023008AC96F /* YKQualitySelectItem.h */,
-				E220A31D1D59D023008AC96F /* YKQualitySelectItem.m */,
 			);
 			path = Viewcontroller;
 			sourceTree = "<group>";
@@ -225,6 +196,10 @@
 		E220A2FB1D597CCC008AC96F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E220A3391D59FDC1008AC96F /* YKQualitySelectItem.h */,
+				E220A33A1D59FDC1008AC96F /* YKQualitySelectItem.m */,
+				E220A33B1D59FDC1008AC96F /* YKSQualitySelectView.h */,
+				E220A33C1D59FDC1008AC96F /* YKSQualitySelectView.m */,
 				E220A2FF1D597EB6008AC96F /* YKSVideoView.h */,
 				E220A3001D597EB6008AC96F /* YKSVideoView.m */,
 				E220A3021D597EF4008AC96F /* YKSVideoView.xib */,
@@ -241,6 +216,17 @@
 				E220A3151D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		E220A3451D59FE70008AC96F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E220A3461D59FE70008AC96F /* YKSHomeTableViewCell.h */,
+				E220A3471D59FE70008AC96F /* YKSHomeTableViewCell.m */,
+				E220A3481D59FE70008AC96F /* YKSHomeViewController.h */,
+				E220A3491D59FE70008AC96F /* YKSHomeViewController.m */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +297,10 @@
 				E220A3181D59C986008AC96F /* Assets.xcassets in Resources */,
 				B8AFA4E01D588216008CCC2C /* Main.storyboard in Resources */,
 				B8AFA4F31D5972E1008CCC2C /* source.plist in Resources */,
-				B824594C1D5992A8007A6386 /* video@2x.png in Resources */,
-				B824593F1D5992A8007A6386 /* background@3x.png in Resources */,
-				B824594A1D5992A8007A6386 /* suspend@2x.png in Resources */,
-				B82459401D5992A8007A6386 /* forward@2x.png in Resources */,
+				B824594C1D5992A8007A6386 /* (null) in Resources */,
+				B824593F1D5992A8007A6386 /* (null) in Resources */,
+				B824594A1D5992A8007A6386 /* (null) in Resources */,
+				B82459401D5992A8007A6386 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,18 +359,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E220A31E1D59D023008AC96F /* YKQualitySelectItem.m in Sources */,
 				B8AFA4DD1D588216008CCC2C /* ViewController.m in Sources */,
 				E220A3271D59D44F008AC96F /* UIView+addition.m in Sources */,
-				E220A31B1D59CE96008AC96F /* YKSQualitySelectView.m in Sources */,
 				E220A30D1D59874E008AC96F /* YKSVideoLive.m in Sources */,
 				E220A32A1D59DAF5008AC96F /* YKSConstConfig.m in Sources */,
 				E220A2FA1D597C5C008AC96F /* BaseNavigationController.m in Sources */,
+				E220A34B1D59FE70008AC96F /* YKSHomeViewController.m in Sources */,
+				E220A33E1D59FDC1008AC96F /* YKSQualitySelectView.m in Sources */,
+				E220A34A1D59FE70008AC96F /* YKSHomeTableViewCell.m in Sources */,
 				E220A3011D597EB6008AC96F /* YKSVideoView.m in Sources */,
-				B8AFA4F01D589434008CCC2C /* YKSHomeViewController.m in Sources */,
 				E220A3081D598721008AC96F /* YKSSoundLive.m in Sources */,
 				B8AFA4DA1D588216008CCC2C /* AppDelegate.m in Sources */,
-				B8AFA4FA1D597D08008CCC2C /* YKSHomeTableViewCell.m in Sources */,
+				E220A33D1D59FDC1008AC96F /* YKQualitySelectItem.m in Sources */,
 				B8AFA4D71D588216008CCC2C /* main.m in Sources */,
 				E220A3161D59C5A5008AC96F /* SVProgressHUD+YKSAddition.m in Sources */,
 				E220A2F31D597936008AC96F /* YKLBPlayerCore.m in Sources */,

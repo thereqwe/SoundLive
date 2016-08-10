@@ -28,7 +28,8 @@
     [self removeNotification];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
 }
@@ -37,7 +38,16 @@
 {
     [super viewWillAppear:animated];
     
+    [self.navigationController setNavigationBarHidden:YES];
     [self addNotification];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    [self removeNotification];
 }
 
 - (void)initProperty
@@ -70,7 +80,7 @@
 
 - (void)becomeActive
 {
-
+    
 }
 
 - (void)resignActive

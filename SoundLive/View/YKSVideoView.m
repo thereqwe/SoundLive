@@ -7,6 +7,7 @@
 //
 
 #import "YKSVideoView.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface YKSVideoView ()
 
@@ -16,6 +17,11 @@
 @end
 
 @implementation YKSVideoView
+
++ (Class)layerClass
+{
+    return [AVPlayerLayer class];
+}
 
 - (void)awakeFromNib
 {

@@ -7,8 +7,6 @@
 //
 
 #import "YKQualitySelectItem.h"
-#import "UIView+addition.h"
-#import "YKSConstConfig.h"
 
 
 @implementation YKQualitySelectItem

@@ -15,6 +15,7 @@
                 <outlet property="preBtn" destination="MJY-bw-79k" id="0NT-dQ-eDg"/>
                 <outlet property="qualityBtn" destination="OhK-wK-paZ" id="Doz-g5-Bsq"/>
                 <outlet property="titleLabel" destination="VpK-bq-g62" id="syL-Ky-q2W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="oM6-87-7p3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

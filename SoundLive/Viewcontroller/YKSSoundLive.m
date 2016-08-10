@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *preBtn;
 @property (weak, nonatomic) IBOutlet UIButton *nextBtn;
 
+@property (nonatomic) BOOL canPlay;
 @property (nonatomic, strong) YKLBPlayerCore *playerCore;
 @property (nonatomic) BOOL isPlaying;
 
@@ -29,9 +30,44 @@
 
 #pragma mark - life cycle
 
-- (void)awakeFromNib
+- (void)viewDidLoad
 {
+    [super viewDidLoad];
     
+    [self configDisk];
+    [self configQualityBtn];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    [self addNotification];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    [self removeNotification];
+}
+
+- (void)configDisk
+{
+    _disk.layer.borderColor = ColorRGB(54, 54, 54).CGColor;
+    _disk.layer.borderWidth = 8;
+    _disk.layer.cornerRadius = _disk.width * 0.5;
+    _disk.layer.masksToBounds = YES;
+}
+
+- (void)configQualityBtn
+{
+    _qualityBtn.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    _qualityBtn.layer.borderWidth = 1;
+    _qualityBtn.layer.cornerRadius = _qualityBtn.height * 0.5;
+    _qualityBtn.layer.masksToBounds = YES;
 }
 
 - (BOOL)prefersStatusBarHidden
@@ -89,8 +125,8 @@
         if (!url) {
             
         }
-        [self.playerCore setURL:url];
-        [self startRotating];
+        
+        
         sender.selected = YES;
     }
 }
@@ -99,7 +135,7 @@
 
 - (void)videoPlayerIsReadyToPlayVideo:(YKLBPlayerCore *)playerCore
 {
-    
+    [self startRotating];
 }
 
 - (void)videoPlayerDidReachEnd:(YKLBPlayerCore *)playerCore
@@ -130,6 +166,23 @@
 - (void)videoPlayer:(YKLBPlayerCore *)playerCore didFailWithError:(NSError *)error
 {
     [SVProgressHUD showErrorTip:@"数据加载失败" duration:0.6];
+}
+
+#pragma mark - rotation
+
+- (BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 #pragma mark - notification
